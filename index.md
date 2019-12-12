@@ -102,8 +102,7 @@ Add affiliation info here -- WHPC, our institutions
 <p id="requirements">
   <strong>Requirements:</strong> Participants must bring a laptop with a
   Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges
-  on. They should have a few specific software packages installed (listed
-  <a href="#setup">below</a>). They are also required to abide by
+  on. They should have a <a href="setup/">few specific software packagesSetup</a> installed. They are also required to abide by
   {% if page.carpentry == "swc" %}
   Software Carpentry's
   {% elsif page.carpentry == "dc" %}
