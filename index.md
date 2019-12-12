@@ -38,7 +38,11 @@ overview of the tools available and how to use them effectively.</p>
   <li>Be able to work effectively on a remote shared resource</li>
 </ul>
 
+<h2 id="part2">Part 2</h2>
+
 <p>The material for the second part of this workshop is available at: <a href="https://aniabrown.github.io/hpc-carpentry-WHPC/">https://aniabrown.github.io/hpc-carpentry-WHPC/</a>.</p>
+
+<h2 id="details">Details</h2>
 
 {% comment %}
 Add affiliation info here -- WHPC, our institutions
@@ -138,11 +142,6 @@ Add affiliation info here -- WHPC, our institutions
 
 <hr/>
 
-> ## Prerequisites
-> There are no prerequisites for this lesson
-{: .prereq}
-
-### Getting Started
 <h2 id="setup">Getting Started</h2>
 
 <p>To get started, follow the directions on the <a href="setup/">Setup</a> page to ensure you have the bash shell and an SSH client installed.</p>
