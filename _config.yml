@@ -108,14 +108,14 @@ highlighter: rouge
 # * workshop_host_prompt - The bash prompt on the remote host
 # * workshop_host_homedir - The location of the home directory on the remote host
 #
-# Example: Graham cluster at Compute Canada, University of Waterloo
-workshop_host: "Graham"
-workshop_host_id: "ComputeCanada_Graham"
-workshop_host_login: "graham.computecanada.ca"
-workshop_host_location: "University of Waterloo"
-workshop_host_prompt: "[yourUsername@gra-login1 ~]$ "
+# Example: Bessemer cluster at University of Sheffield
+workshop_host: "Bessemer"
+workshop_host_id: "Sheffield_Bessemer"
+workshop_host_login: "bessemer.shef.ac.uk"
+workshop_host_location: "University of Sheffield"
+workshop_host_prompt: "[yourUsername@bessemer-login1 ~]$ "
 workshop_host_homedir: "/home"
-workshop_sched_id: "ComputeCanada_Graham_slurm"
+workshop_sched_id: "Sheffield_Bessemer_slurm"
 # Example: Cirrus at EPCC, The University of Edinburgh
 # workshop_host: "Cirrus"
 # workshop_host_id: "EPCC_Cirrus"
