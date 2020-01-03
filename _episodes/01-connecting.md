@@ -16,8 +16,7 @@ keypoints:
 Connecting to an HPC system is most often done through a tool known as "SSH" (Secure SHell) and
 usually SSH is run through a terminal. So, to begin using an HPC system we need to begin by opening
 a terminal. Different operating systems have different terminals, none of which are exactly the same
-in terms of their features and abilities while working on the operating system. When connected to
-the remote system the experience between terminals will be identical as each will faithfully present
+in terms of their features and abilities while working on the operating system. However each time you connect to the same remote system with a new terminal the experience will be identical as each will faithfully present
 the same experience of using that system.
 
 Here is the process for opening a terminal in each operating system.
