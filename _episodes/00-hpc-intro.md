@@ -37,7 +37,7 @@ they started:
   haven't used this option on their desktop, but in going from 2D to 3D simulations, simulation time
   has more than tripled and it might be useful to take advantage of that feature.
 
-In all these cases, what is needed is access to more computers than can be used at the same time.
+In all these cases, what is needed is access to more computers that can be used at the same time.
 Luckily, large scale computing systems -- shared computing resources with lots of computers -- are
 available at many universities, labs, or through national networks. These resources usually have
 more central processing units(CPUs), CPUs that operate at higher speeds, more memory, more storage,
