@@ -256,17 +256,8 @@ $ ls
 ```
 {: .language-bash}
 
-```
-files Documents
-rmdir: failed to remove `files/': Directory not empty
-files
-```
-{: .output}
-
-What happened? As it turns out, `rmdir` is unable to remove directories that have stuff in them. To
-delete a directory and everything inside it, we will use a special variant of `rm`, `rm -rf
-directory`. This is probably the scariest command on UNIX- it will force delete a directory and all
-of its contents without prompting. **ALWAYS** double check your typing before using it... if you
+`rm -r directory` is probably the scariest command on UNIX- it will delete a directory and all
+of its contents. **ALWAYS** double check your typing before using it... if you
 leave out the arguments, it will attempt to delete everything on your file system that you have
 permission to delete. So when deleting directories be very, very careful.
 
@@ -278,7 +269,8 @@ permission to delete. So when deleting directories be very, very careful.
 > In January 2015, user kevyin on GitHub
 > [reported that Steam's Linux client had deleted every file on his computer](https://github.com/ValveSoftware/steam-for-linux/issues/3671).
 > It turned out that one of the Steam programmers had added the following line: `rm -rf
-> "$STEAMROOT/"*`. Due to the way that Steam was set up, the variable `$STEAMROOT` was never
+> "$STEAMROOT/"*` (The `-f` option is used to force delete write-protected files and silence warnings). 
+> Due to the way that Steam was set up, the variable `$STEAMROOT` was never
 > initialized, meaning the statement evaluated to `rm -rf /*`. This coding error in the Linux client
 > meant that Steam deleted every single file on a computer when run in certain scenarios (including
 > connected external hard drives). Moral of the story: **be very careful** when using `rm -rf`!
