@@ -25,10 +25,8 @@ Here is the process for opening a terminal in each operating system.
 ### Linux
 
 There are many different versions (aka "flavours") of Linux and how to open a terminal window can
-change between flavours. Fortunately most Linux users already know how to open a terminal window
-since it is a common part of the workflow for Linux users. If this is something that you do not know
-how to do then a quick search on the Internet for "how to open a terminal window in" with your
-particular Linux flavour appended to the end should quickly give you the directions you need.
+change between flavours. A quick search on the Internet for "how to open a terminal window in" with your
+particular Linux flavour appended to the end should give you the directions you need.
 
 A very popular version of Linux is Ubuntu. There are many ways to open a terminal window in Ubuntu
 but a very fast way is to use the terminal shortcut key sequence: Ctrl+Alt+T.
