@@ -18,48 +18,7 @@ keypoints:
 ---
 
 
-Frequently, research problems that use computing can outgrow the desktop or laptop computer where
-they started:
 
-* A statistics student wants to cross-validate their model. This involves running the model 1000
-  times -- but each run takes an hour. Running on their laptop will take over a month!
-
-* A genomics researcher has been using small datasets of sequence data, but soon will be receiving
-  a new type of sequencing data that is 10 times as large. It's already challenging to open the
-  datasets on their computer -- analyzing these larger datasets will probably crash it.
-
-* An engineer is using a fluid dynamics package that has an option to run in parallel. So far, they
-  haven't used this option on their desktop, but in going from 2D to 3D simulations, simulation 
-  time has more than tripled and it might be useful to take advantage of that feature.
-
-In all these cases, what is needed is access to more computers that can be used at the same time.
-
-> ## And what do you do?
-> 
-> Talk to your neighbour, office mate or [rubber duck](https://rubberduckdebugging.com/) about your
-> research. How does computing help you do your research? 
-> How could more computing help you do more or better research?
-{: .challenge }
-
-
-# Doing Analysis or Running Code
-
-## A standard Laptop for standard tasks
-
-Today, people coding or analysing data typically work with laptops.
- 
-{% include figure.html url="" max-width="20%" file="/fig/200px-laptop-openclipartorg-aoguerrero.svg"
- alt="A standard laptop" caption="" %}
-
-Let's dissect what resources programs running on a laptop require:
-- the keyboard and/or touchpad is used to tell the computer what to do (**Input**)
-- the internal computing resources **Central Processing Unit** and **Memory** perform calculation
-- the display depicts progress and results (**Output**)
-
-Schematically, this can be reduced to the following:
-
-{% include figure.html max-width="30%" file="/fig/Simple_Von_Neumann_Architecture.svg" 
-alt="Schematic of how a computer works" caption="" %}
 
 
 ## When tasks take too long
