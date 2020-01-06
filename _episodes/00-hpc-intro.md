@@ -105,5 +105,3 @@ prospect users:
 > Take a minute and think about which of your daily interactions with a computer may require a 
 > remote server or even cluster to provide you with results. 
 {: .challenge }
-
-{% include links.md %}
