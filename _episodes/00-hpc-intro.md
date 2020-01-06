@@ -19,35 +19,6 @@ keypoints:
 
 
 
-
-
-## When tasks take too long
-
-When the task to solve become heavy on computations, the operations are typically out-sourced 
-from the local laptop or desktop to elsewhere. Take for example the task to find the directions for
-your next business trip. The capabilities of your laptop are typically not enough to calculate 
-that route spontaneously. So you use website, which in turn runs on a server that is almost 
-exclusively not in the same room as you are.
-
-{% include figure.html url="" max-width="20%" file="/fig/servers-openclipartorg-ericlemerdy.svg" 
-alt="A rack half full with servers" caption="" %}
-
-Note here, that a server is mostly a noisy computer mounted into a rack cabinet which in turn 
-resides in a data center. The internet made it possible that these data centers do not require to 
-be nearby your laptop. What people call **the cloud** is mostly a web-service where you can rent 
-such servers by providing your credit card details and by clicking together the specs of this 
-remote resource.
-
-The server itself has no direct display or input methods attached to it. But most importantly, it 
-has much more storage, memory and compute capacity than your laptop will ever have. In any case,
-you need a local device (laptop, workstation, mobile phone or tablet) to interact with this remote 
-machine, people typically call 'a server'. 
-
-## When one server is not enough
-
-If the computational task or analysis to complete is daunting for a single server, larger 
-agglomerations of servers are used. These go by the name of clusters or super computers.
-
 {% include figure.html url="" max-width="20%" 
 file="/fig/serverrack-openclipartorg-psteinb-basedon-ericlemerdy.svg" alt="A rack with servers"
 caption="" %}
