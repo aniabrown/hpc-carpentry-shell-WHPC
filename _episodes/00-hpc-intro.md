@@ -67,7 +67,7 @@ your next business trip. The capabilities of your laptop are typically not enoug
 that route spontaneously. So you use website, which in turn runs on a server that is almost 
 exclusively not in the same room as you are.
 
-![A rack half full with servers]({{ site.url }}{{ site.baseurl }}200pxservers-openclipartorg-ericlemerdy.svg)
+![A rack with servers]({{ site.url }}{{ site.baseurl }}200px-servers-openclipartorg-ericlemerdy.svg)
 
 
 Note here, that a server is mostly a noisy computer mounted into a rack cabinet which in turn 
@@ -86,7 +86,7 @@ machine, people typically call 'a server'.
 If the computational task or analysis to complete is daunting for a single server, larger 
 agglomerations of servers are used. These go by the name of clusters or super computers.
 
-![A rack with servers]({{ site.url }}{{ site.baseurl }}/fig/serverrack-openclipartorg-psteinb-basedon-ericlemerdy.png)
+![A rack with servers]({{ site.url }}{{ site.baseurl }}/fig/200px-servers-openclipartorg-ericlemerdy.svg)
 
 The methodology of providing the input data, communicating options and flags as well as retrieving
 the results is quite opposite to using a plain laptop. Moreover, using a GUI style interface is 
