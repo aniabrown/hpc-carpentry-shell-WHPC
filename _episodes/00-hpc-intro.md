@@ -67,7 +67,7 @@ your next business trip. The capabilities of your laptop are typically not enoug
 that route spontaneously. So you use website, which in turn runs on a server that is almost 
 exclusively not in the same room as you are.
 
-![A rack with servers]({{ site.url }}{{ site.baseurl }}200px-servers-openclipartorg-ericlemerdy.svg)
+![A rack with servers]({{ site.url }}{{ site.baseurl }}/fig/200px-servers-openclipartorg-ericlemerdy.svg)
 
 
 Note here, that a server is mostly a noisy computer mounted into a rack cabinet which in turn 
