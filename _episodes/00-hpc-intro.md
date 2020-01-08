@@ -86,8 +86,6 @@ machine, people typically call 'a server'.
 If the computational task or analysis to complete is daunting for a single server, larger 
 agglomerations of servers are used. These go by the name of clusters or super computers.
 
-![A rack with servers]({{ site.url }}{{ site.baseurl }}/fig/200px-servers-openclipartorg-ericlemerdy.svg)
-
 The methodology of providing the input data, communicating options and flags as well as retrieving
 the results is quite opposite to using a plain laptop. Moreover, using a GUI style interface is 
 often discarded in favor of using the command line. This imposes a double paradigm shift for 
