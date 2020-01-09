@@ -12,7 +12,7 @@ startdate: 2020-01-30
 enddate: 2020-01-31
 instructor: ["Mozhgan Kabiri Chimeh, Anna Brown, Fouzhan Hosseini, Weronika Fillinger, Neelofar Banglawala"]
 helper: []
-email: [m.kabiri-chimeh@sheffield.ac.uk]
+email: [mozhgank@nvidia.com]
 collaborative_notes: https://pad.carpentries.org/2020-01-30-whpc-hpccarpentry
 eventbrite: 
 root: .
