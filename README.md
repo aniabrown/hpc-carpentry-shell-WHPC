@@ -53,7 +53,7 @@ order, it will appear in the correct order on the website.
 ### Publishing changes to Github + the Github pages website
 
 The lesson website is viewable at
-[https://hpc-carpentry.github.io/hpc-shell/](https://hpc-carpentry.github.io/hpc-shell/)
+[https://hpc-carpentry.github.io/hpc-shell/](https://aniabrown.github.io/hpc-carpentry-shell-WHPC/)
 
 The lesson website itself is auto-generated from the `gh-pages` branch of this repository. Github
 pages will rebuild the website as soon as you push to the Github `gh-pages` branch. Because of this
