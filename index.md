@@ -32,10 +32,10 @@ overview of the tools available and how to use them effectively.</p>
 <p>By the end of this workshop, students will know how to:</p>
 
 <ul>
-  <li>Know how to connect to remote HPC systems and transfer data</li>
-  <li>Know how to use a scheduler to work on a shared system</li>
-  <li>Be able to use software modules to access different HPC software</li>
-  <li>Be able to work effectively on a remote shared resource</li>
+  <li>Connect to remote HPC systems and transfer data</li>
+  <li>Use a scheduler to work on a shared system</li>
+  <li>Use software modules to access different HPC software</li>
+  <li>Work effectively on a remote shared resource</li>
 </ul>
 
 <h2 id="part2">Part 2</h2>
