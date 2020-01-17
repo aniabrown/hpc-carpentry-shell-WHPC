@@ -49,109 +49,9 @@ Ready to run our program?
 Let's try running it:
 
 ```
-$ demo.sh 
+$ bash demo.sh 
 ```
 {: .language-bash}
-
-```
-bash: demo.sh: command not found...
-```
-{: .error}
-
-Strangely enough, Bash can't find our script. As it turns out, Bash will only look in certain
-directories for scripts to run. To run anything else, we need to tell Bash exactly where to look. To
-run a script that we wrote ourselves, we need to specify the full path to the file, followed by the
-filename. We could do this one of two ways: either with our absolute path
-`{{ site.workshop_host_homedir }}/yourUserName/demo.sh`, or with the relative path `./demo.sh`.
-
-```
-$ ./demo.sh
-```
-{: .language-bash}
-
-```
-bash: ./demo.sh: Permission denied
-```
-{: .error}
-
-There's one last thing we need to do. Before a file can be run, it needs "permission" to run. Let's
-look at our file's permissions with `ls -l`:
-
-```
-$ ls -l
-```
-{: .language-bash}
-
-```
--rw-rw-r--. 1 yourUsername tc001 12534006 Jan 16 18:50 bash-lesson.tar.gz
--rw-rw-r--. 1 yourUsername tc001       40 Jan 16 19:41 demo.sh
--rw-rw-r--. 1 yourUsername tc001 77426528 Jan 16 18:50 dmel-all-r6.19.gtf
--rw-r--r--. 1 yourUsername tc001   721242 Jan 25  2016 dmel_unique_protein_isoforms_fb_2016_01.tsv
-drwxrwxr-x. 2 yourUsername tc001     4096 Jan 16 19:16 fastq
--rw-r--r--. 1 yourUsername tc001  1830516 Jan 25  2016 gene_association.fb.gz
--rw-rw-r--. 1 yourUsername tc001       15 Jan 16 19:17 test.txt
--rw-rw-r--. 1 yourUsername tc001      245 Jan 16 19:24 word_counts.txt
-```
-{: .output}
-
-That's a huge amount of output. Let's see if we can understand what it is, working left to right.
-
-+ **1st column - Permissions:** On the very left side, there is a string of the characters `d`, `r`,
-  `w`, `x`, and `-`. The `d` indicates if something is a directory (there is a `-` in that
-  spot if it is not a directory). The other `r`, `w`, `x` bits indicates permission to **R**ead
-  **W**rite and e**X**ecute a file. There are three columns of `rwx` permissions following the spot
-  for `d`. If a user is missing a permission to do something, it's indicated by a `-`.
-    + The first column of `rwx` are the permissions that the owner has (in this case the owner is
-      `yourUsername`).
-    + The second set of `rwx`s are permissions that other members of the owner's group share (in
-      this case, the group is named `tc001`).
-    + The third set of `rwx`s are permissions that anyone else with access to this computer can do
-      with a file. Though files are typically created with read permissions for everyone, typically
-      the permissions on your home directory prevent others from being able to access the file in
-      the first place.
-+ **2nd column - Owner:** This is the username of the user who owns the file. Their permissions are
-  indicated in the first permissions column.
-+ **3rd column - Group:** This is the user group of the user who owns the file. Members of this user
-  group have permissions indicated in the second permissions column.
-+ **4th column - Size of file:** This is the size of a file in bytes, or the number of
-  files/subdirectories if we are looking at a directory. (We can use the `-h` option here to get a
-  human-readable file size in megabytes, gigabytes, etc.)
-+ **5th column - Time last modified:** This is the last time the file was modified.
-+ **6th column - Filename:** This is the filename.
-
-So how do we change permissions? As I mentioned earlier, we need permission to execute our script.
-Changing permissions is done with `chmod`. To add executable permissions for all users we could use
-this:
-
-```
-$ chmod +x demo.sh
-$ ls -l
-```
-{: .language-bash}
-
-```
--rw-rw-r--. 1 yourUsername tc001 12534006 Jan 16 18:50 bash-lesson.tar.gz
--rwxrwxr-x. 1 yourUsername tc001       40 Jan 16 19:41 demo.sh
--rw-rw-r--. 1 yourUsername tc001 77426528 Jan 16 18:50 dmel-all-r6.19.gtf
--rw-r--r--. 1 yourUsername tc001   721242 Jan 25  2016 dmel_unique_protein_isoforms_fb_2016_01.tsv
-drwxrwxr-x. 2 yourUsername tc001     4096 Jan 16 19:16 fastq
--rw-r--r--. 1 yourUsername tc001  1830516 Jan 25  2016 gene_association.fb.gz
--rw-rw-r--. 1 yourUsername tc001       15 Jan 16 19:17 test.txt
--rw-rw-r--. 1 yourUsername tc001      245 Jan 16 19:24 word_counts.txt
-```
-{: .output}
-
-Now that we have executable permissions for that file, we can run it. 
-
-```
-$ ./demo.sh
-```
-{: .language-bash}
-
-```
-Our script worked!
-```
-{: .output}
 
 Fantastic, we've written our first program! Before we go any further, let's learn how to take notes
 inside our program using comments. A comment is indicated by the `#` character, followed by whatever
@@ -218,7 +118,7 @@ wc -l $FILE
 {: .language-bash}
 
 ```
-$ ./demo.sh
+$ bash demo.sh
 ```
 {: .language-bash}
 
@@ -247,7 +147,7 @@ wc -l $1
 {: .language-bash}
 
 ```
-$ ./demo.sh dmel_unique_protein_isoforms_fb_2016_01.tsv
+$ bash demo.sh dmel_unique_protein_isoforms_fb_2016_01.tsv
 ```
 {: .language-bash}
 
@@ -312,8 +212,7 @@ iteration, the code between `do` and `done` is performed.
 Let's run the script we just wrote (I saved mine as `loop.sh`).
 
 ```
-$ chmod +x loop.sh
-$ ./loop.sh
+$ bash loop.sh
 ```
 {: .language-bash}
 
@@ -339,7 +238,7 @@ done
 ```
 
 ```
-$ ./loop.sh
+$ bash loop.sh
 ```
 {: .language-bash}
 
@@ -445,6 +344,117 @@ gene_association.fb.gz
 > {: .solution}
 {: .challenge}
 
+## Running a script like a linux command
+
+We can save a little typing time by running our script like any other Linux command (eg ls) instead of
+having to type 'bash' before each command. This takes a bit of set up. 
+
+If we type:
+
+```
+$ ./demo.sh
+```
+{: .language-bash}
+
+```
+bash: demo.sh: command not found...
+```
+{: .error}
+
+Bash can't find our script. As it turns out, Bash will only look in certain
+directories for scripts to run. To run anything else, we need to tell Bash exactly where to look. To
+run a script that we wrote ourselves, we need to specify the full path to the file, followed by the
+filename. We could do this one of two ways: either with our absolute path
+`{{ site.workshop_host_homedir }}/yourUserName/demo.sh`, or with the relative path `./demo.sh`.
+
+```
+$ ./demo.sh
+```
+{: .language-bash}
+
+```
+bash: ./demo.sh: Permission denied
+```
+{: .error}
+
+There's one last thing we need to do. Before a file can be run, it needs "permission" to run. Let's
+look at our file's permissions with `ls -l`:
+
+```
+$ ls -l
+```
+{: .language-bash}
+
+```
+-rw-rw-r--. 1 yourUsername tc001 12534006 Jan 16 18:50 bash-lesson.tar.gz
+-rw-rw-r--. 1 yourUsername tc001       40 Jan 16 19:41 demo.sh
+-rw-rw-r--. 1 yourUsername tc001 77426528 Jan 16 18:50 dmel-all-r6.19.gtf
+-rw-r--r--. 1 yourUsername tc001   721242 Jan 25  2016 dmel_unique_protein_isoforms_fb_2016_01.tsv
+drwxrwxr-x. 2 yourUsername tc001     4096 Jan 16 19:16 fastq
+-rw-r--r--. 1 yourUsername tc001  1830516 Jan 25  2016 gene_association.fb.gz
+-rw-rw-r--. 1 yourUsername tc001       15 Jan 16 19:17 test.txt
+-rw-rw-r--. 1 yourUsername tc001      245 Jan 16 19:24 word_counts.txt
+```
+{: .output}
+
+That's a huge amount of output. Let's see if we can understand what it is, working left to right.
+
++ **1st column - Permissions:** On the very left side, there is a string of the characters `d`, `r`,
+  `w`, `x`, and `-`. The `d` indicates if something is a directory (there is a `-` in that
+  spot if it is not a directory). The other `r`, `w`, `x` bits indicates permission to **R**ead
+  **W**rite and e**X**ecute a file. There are three columns of `rwx` permissions following the spot
+  for `d`. If a user is missing a permission to do something, it's indicated by a `-`.
+    + The first column of `rwx` are the permissions that the owner has (in this case the owner is
+      `yourUsername`).
+    + The second set of `rwx`s are permissions that other members of the owner's group share (in
+      this case, the group is named `tc001`).
+    + The third set of `rwx`s are permissions that anyone else with access to this computer can do
+      with a file. Though files are typically created with read permissions for everyone, typically
+      the permissions on your home directory prevent others from being able to access the file in
+      the first place.
++ **2nd column - Owner:** This is the username of the user who owns the file. Their permissions are
+  indicated in the first permissions column.
++ **3rd column - Group:** This is the user group of the user who owns the file. Members of this user
+  group have permissions indicated in the second permissions column.
++ **4th column - Size of file:** This is the size of a file in bytes, or the number of
+  files/subdirectories if we are looking at a directory. (We can use the `-h` option here to get a
+  human-readable file size in megabytes, gigabytes, etc.)
++ **5th column - Time last modified:** This is the last time the file was modified.
++ **6th column - Filename:** This is the filename.
+
+So how do we change permissions? As I mentioned earlier, we need permission to execute our script.
+Changing permissions is done with `chmod`. To add executable permissions for all users we could use
+this:
+
+```
+$ chmod +x demo.sh
+$ ls -l
+```
+{: .language-bash}
+
+```
+-rw-rw-r--. 1 yourUsername tc001 12534006 Jan 16 18:50 bash-lesson.tar.gz
+-rwxrwxr-x. 1 yourUsername tc001       40 Jan 16 19:41 demo.sh
+-rw-rw-r--. 1 yourUsername tc001 77426528 Jan 16 18:50 dmel-all-r6.19.gtf
+-rw-r--r--. 1 yourUsername tc001   721242 Jan 25  2016 dmel_unique_protein_isoforms_fb_2016_01.tsv
+drwxrwxr-x. 2 yourUsername tc001     4096 Jan 16 19:16 fastq
+-rw-r--r--. 1 yourUsername tc001  1830516 Jan 25  2016 gene_association.fb.gz
+-rw-rw-r--. 1 yourUsername tc001       15 Jan 16 19:17 test.txt
+-rw-rw-r--. 1 yourUsername tc001      245 Jan 16 19:24 word_counts.txt
+```
+{: .output}
+
+Now that we have executable permissions for that file, we can run it. 
+
+```
+$ ./demo.sh
+```
+{: .language-bash}
+
+```
+Our script worked!
+```
+{: .output}
 
 > ## Special permissions 
 >
