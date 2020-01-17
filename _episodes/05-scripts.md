@@ -352,7 +352,7 @@ having to type 'bash' before each command. This takes a bit of set up.
 If we type:
 
 ```
-$ ./demo.sh
+$ demo.sh
 ```
 {: .language-bash}
 
