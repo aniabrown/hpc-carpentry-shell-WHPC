@@ -6,12 +6,13 @@ questions:
 - "How do I turn a set of commands into a program?"
 objectives:
 - "Write a shell script"
-- "Understand and manipulate UNIX permissions"
 - "Understand shell variables and how to use them"
 - "Write a simple for loop"
+- "Understand and manipulate UNIX permissions"
 keypoints:
 - "A shell script is just a list of bash commands in a text file."
-- "`chmod +x script.sh` will give it permission to execute."
+- "You can use variables and loops to automate tasks that were previously done by hand"
+- "`chmod +x script.sh` will give a script permission to execute."
 ---
 
 We now know a lot of UNIX commands! Wouldn't it be great if we could save certain commands so that
@@ -70,6 +71,7 @@ Now lets try adding this to our script with `nano`. Edit your script to look som
 # This is a comment... they are nice for making notes!
 echo "Our script worked!"
 ```
+{: .language-bash}
 
 When we run our script, the output should be unchanged from before!
 
@@ -156,20 +158,24 @@ $ bash demo.sh dmel_unique_protein_isoforms_fb_2016_01.tsv
 ```
 {: .output}
 
-Nice! One thing to be aware of when using variables: they are all treated as pure text. How do we
-save the output of an actual command like `ls -l`?
+Nice! 
+
+## Capturing the output of commands
+
+One thing to be aware of when using variables: they are all treated as pure text. How do we
+save the output of an actual command like `ls`?
 
 A demonstration of what doesn't work:
 
 ```
-$ TEST=ls -l
+$ TEST=ls
+$ echo $TEST
 ```
 {: .language-bash}
 
+``` {.output}
+ls
 ```
--bash: -l: command not found
-```
-{: .error}
 
 What does work (we need to surround any command with `$(command)`):
 ```
@@ -236,6 +242,7 @@ do
         echo $VAR
 done
 ```
+{: .language-bash}
 
 ```
 $ bash loop.sh
