@@ -65,6 +65,7 @@ MARKDOWN_SRC = \
   index.md \
   CONDUCT.md \
   setup.md \
+  schedule.md \
   $(wildcard _episodes/*.md) \
   reference.md \
   $(wildcard _extras/*.md) \
@@ -75,6 +76,7 @@ HTML_DST = \
   ${DST}/index.html \
   ${DST}/conduct/index.html \
   ${DST}/setup/index.html \
+  ${DST}/schedule/index.html \
   $(patsubst _episodes/%.md,${DST}/%/index.html,$(wildcard _episodes/*.md)) \
   ${DST}/reference/index.html \
   $(patsubst _extras/%.md,${DST}/%/index.html,$(wildcard _extras/*.md)) \
