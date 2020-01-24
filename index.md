@@ -38,6 +38,16 @@ overview of the tools available and how to use them effectively.</p>
   <li>Work effectively on a remote shared resource</li>
 </ul>
 
+<p>Instructors and helpers</p>
+
+<ul>
+  <li>Mozhgan Kabiri chimeh (NVIDIA)
+<li>Anna (Ania) Brown (University of Oxford, University of Southampton)
+<li>Fouzhan Hosseini (Numerical Algorithms Group)
+<li>Weronika Fillinger (EPCC)
+<li>Neelofar Banglawala (EPCC)
+</ul>
+
 <h2 id="part2">Part 2</h2>
 
 <p>The material for the second part of this workshop is available at: <a href="https://aniabrown.github.io/hpc-carpentry-WHPC/">https://aniabrown.github.io/hpc-carpentry-WHPC/</a>.</p>
@@ -113,6 +123,21 @@ Add affiliation info here -- WHPC, our institutions
   <a href="{{site.swc_site}}/conduct.html">Code of Conduct</a>
 </p>
 
+{% comment %}
+  ACCESSIBILITY
+
+  Modify the block below if there are any barriers to accessibility or
+  special instructions.
+{% endcomment %}
+<p id="accessibility">
+  <strong>Accessibility:</strong> We are committed to making this workshop
+  accessible to everybody.
+  The workshop organizers have checked that:
+</p>
+<ul>
+  <li>The room is wheelchair / scooter accessible.</li>
+  <li>Accessible restrooms are available.</li>
+</ul>
 
 {% comment %}
   CONTACT EMAIL ADDRESS
