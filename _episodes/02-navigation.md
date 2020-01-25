@@ -117,7 +117,7 @@ $ pwd
 ```
 {: .language-bash}
 ```
-~/documents
+{{ site.workshop_host_homedir }}/yourUserName/documents
 ```
 {: .output}
 
@@ -265,7 +265,7 @@ drwx--S--- 2 yourUsername tc001 4096 Nov 28 09:58 .ssh
 {: .output}
 
 Flags generally precede any arguments passed to a UNIX command. `ls` actually takes an extra
-argument that specifies a directory to look into. When you use flags and arguments together, they
+argument that specifies a directory to look into. When you use flags and arguments together, the
 syntax (how it's supposed to be typed) generally looks something like this:
 
 ```
@@ -457,17 +457,3 @@ Mandatory arguments to long options are mandatory for short options too.
 > {: .solution}
 {: .challenge}
 
-> ## Listing Recursively and By Time
->
-> The command `ls -R` lists the contents of directories recursively, i.e., lists their
-> sub-directories, sub-sub-directories, and so on in alphabetical order at each level. The command
-> `ls -t` lists things by time of last change, with most recently changed files or directories
-> first. In what order does `ls -R -t` display things? Hint: `ls -l` uses a long listing format to
-> view timestamps.
->
-> > ## Solution
-> >
-> > The directories are listed alphabetical at each level, the files/directories in each directory
-> > are sorted by time of last change.
-> {: .solution}
-{: .challenge}
