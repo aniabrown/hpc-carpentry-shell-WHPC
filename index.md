@@ -172,6 +172,9 @@ Add affiliation info here -- WHPC, our institutions
 
 <hr/>
 
+<h2 id="survey"> Pre workshop survey</h2>
+
+To help us support you as best as possible during the workshop, we request that you please complete the following [pre-course survey](https://forms.office.com/Pages/ResponsePage.aspx?id=JhaX55a5Lkazybu6OlDVXYnSk6_JQaBEovlJG8Ng14dUMEI2T0dNT1FSQ0FDV1lFWjVNTTE4Q1BEMC4u). It should only take a few moments.
 
 {% comment %}
   Collaborative Notes
