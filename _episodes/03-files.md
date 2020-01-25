@@ -39,7 +39,10 @@ What if we want to make a file? There are a few ways of doing this, the easiest 
 using a text editor. For this lesson, we are going to us `nano`, since it's more intuitive than many
 other terminal text editors.
 
-To create or edit a file, type `nano <filename>`, on the terminal, where `<filename>` is the name of the
+`nano` is another command like `ls`, but one that comes in a 'module'. We will talk more about modules later, 
+but for now type `module load nano` to make the command available. 
+
+Now, to create or edit a file, type `nano <filename>`, on the terminal, where `<filename>` is the name of the
 file.  If the file does not already exist, it will be created.
 Let's make a new file now, type whatever you want in it, and save it.
 
@@ -257,9 +260,7 @@ $ ls
 {: .language-bash}
 
 `rm -r directory` is probably the scariest command on UNIX- it will delete a directory and all
-of its contents. **ALWAYS** double check your typing before using it... if you
-leave out the arguments, it will attempt to delete everything on your file system that you have
-permission to delete. So when deleting directories be very, very careful.
+of its contents. **ALWAYS** double check your typing before using it.
 
 > ## What happens when you use `rm -rf` accidentally
 >
