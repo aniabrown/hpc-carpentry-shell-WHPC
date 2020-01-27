@@ -364,8 +364,18 @@ Mandatory arguments to long options are mandatory for short options too.
 
 > ## Looking at documentation
 >
-> Looking at the man page for `ls` or using `ls --help`, what does the `-h` (`--human-readable`)
-> option do?
+> Looking at the man page for `ls` or using `ls --help`, what does the command `ls` 
+> do when used with the `-l` and `-h` arguments?
+>
+> Some of its output is about properties that we do not cover in this lesson (such as file
+> permissions and ownership), but the rest should be useful nevertheless.
+>
+> > ## Solution
+> > The `-l` arguments makes `ls` use a **l**ong listing format, showing not only the file/directory
+> > names but also additional information such as the file size and the time of its last
+> > modification. The `-h` argument makes the file size "**h**uman readable", i.e. display something
+> > like `5.3K` instead of `5369`.
+> {: .solution}
 {: .challenge}
 
 > ## Absolute vs Relative Paths
@@ -440,18 +450,5 @@ Mandatory arguments to long options are mandatory for short options too.
 > {: .solution}
 {: .challenge}
 
-> ## Exploring More `ls` Arguments
->
-> What does the command `ls` do when used with the `-l` and `-h` arguments?
->
-> Some of its output is about properties that we do not cover in this lesson (such as file
-> permissions and ownership), but the rest should be useful nevertheless.
->
-> > ## Solution
-> > The `-l` arguments makes `ls` use a **l**ong listing format, showing not only the file/directory
-> > names but also additional information such as the file size and the time of its last
-> > modification. The `-h` argument makes the file size "**h**uman readable", i.e. display something
-> > like `5.3K` instead of `5369`.
-> {: .solution}
-{: .challenge}
+
 
