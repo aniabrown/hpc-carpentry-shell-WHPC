@@ -431,14 +431,12 @@ Mandatory arguments to long options are mandatory for short options too.
 > 1.  `ls pwd`
 > 2.  `ls -r -F`
 > 3.  `ls -r -F /Users/backup`
-> 4.  Either #2 or #3 above, but not #1.
 >
 > > ## Solution
 > >  1. No: `pwd` is not the name of a directory.
 > >  2. Yes: `ls` without directory argument lists files and directories
 > >     in the current directory.
 > >  3. Yes: uses the absolute path explicitly.
-> >  4. Correct: see explanations above.
 > {: .solution}
 {: .challenge}
 
