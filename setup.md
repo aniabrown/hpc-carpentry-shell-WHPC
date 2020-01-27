@@ -22,24 +22,20 @@ We maintain a list of common issues that occur during installation as a referenc
 
 ### Windows
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/339AEqk9c-8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 1. Download the [Git for Windows installer](https://git-for-windows.github.io/)
-2. Run the installer and follow the steps below:
-   a. Click on "Next".
-   b. Click on "Next".
-   c. Keep "Use Git from the Windows Command Prompt" selected and click on "Next". If you forgot to do this programs that you need for the workshop will not work properly. If this happens rerun the installer and select the appropriate option. dlick on "Next".
-   d. Keep "Checkout Windows-style, commit Unix-style line endings" selected and click on "Next".
-   e. Keep "Use Windows' default console window" selected and click on "Next".
-   f. Click on "Install".
-   g. Click on "Finish".
-3. If your "HOME" environment variable is not set (or you don't know what this is):
-   a. Open command prompt (Open Start Menu then type cmd and press [Enter])
-   b. Type the following line into the command prompt window exactly as shown: `setx HOME "%USERPROFILE%`
-   c. Press `[Enter]`, you should see `SUCCESS: Specified value was saved.`
-   d. Quit command prompt by typing exit then pressing `[Enter]`
-
+2. Run the installer. The exact questions you are asked will vary by version of git bash, but in general, keep all defaults with the following exceptions:
+   - Most importantly, choose 'Use Windows as default console' rather than 'Use MinTTY'
+   - If given the option of 'Choosing the default editor used by Git', choose 'Use the Nano editor by default'
+   - Make sure 'Use Git from the Windows Command Prompt' is selected. Depending on version, this may be called 'Git from the command line and also from 3rd-party software.'  
+   
 This will provide you with bash (and SSH) in the Git Bash program.
+   
+The video below talks through installing and opening git bash v2.7.2. You will not need to additionally download the Software Carpentry Windows Installer for this workshop that is mentioned in the video. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/339AEqk9c-8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 
 ### MacOS
 
