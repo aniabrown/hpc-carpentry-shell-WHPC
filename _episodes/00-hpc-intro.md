@@ -79,7 +79,7 @@ remote resource.
 The server itself has no direct display or input methods attached to it. But most importantly, it 
 has much more storage, memory and compute capacity than your laptop will ever have. In any case,
 you need a local device (laptop, workstation, mobile phone or tablet) to interact with this remote 
-machine, people typically call 'a server'. 
+machine, which people typically call 'a server'. 
 
 ## When one server is not enough
 
