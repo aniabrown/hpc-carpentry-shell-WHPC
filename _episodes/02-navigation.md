@@ -163,18 +163,14 @@ your OS.
 >
 > File storage locations:
 >
-> * **Network filesystem** - Your home directory is an example of a network filesystem. Data stored
+> * **Home filesystem** - Your home directory is an example of a network filesystem. Data stored
 >   here is available throughout the HPC system and files stored here are often backed up (but check you local configuration to be sure!). Files stored
 >   here are typically slower to access, the data is actually stored on another computer and is
 >   being transmitted and made available over the network!
-> * **Scratch** - Some systems may offer "scratch" space. Scratch space is typically faster to use
->   than your home directory or network filesystem, but is not usually backed up, and should not be
->   used for long term storage.
-> * **Work file system** - As an alternative to (or sometimes as well as) Scratch space, some HPC 
+> * **Work file system** - Some HPC 
 >   systems offer fast file system access as a work file system. Typically, this will have 
 >   higher performance than your home directory or network file system and may not be 
->   backed up. It differs from scratch space in that files in a work file system are not automatically
->   deleted for you, you must manage the space yourself.
+>   backed up. It is certainly not backed up, and files here may be automatically deleted periodically.
 > * **Local scratch (job only)** - Some systems may offer local scratch space while executing a job.
 >   Such storage is very fast, but will be deleted at the end of your job.
 > * **Ramdisk (job only)** - Some systems may let you store files in a "RAM disk" while running a
