@@ -45,7 +45,7 @@ overview of the tools available and how to use them effectively.</p>
   <li>Anna (Ania) Brown (University of Oxford, University of Southampton)</li>
   <li>Fouzhan Hosseini (Numerical Algorithms Group)</li>
   <li>Weronika Fillinger (EPCC)</li>
-  <li>Neelofar Banglawala (EPCC)</li>
+  <li>Neelofer Banglawala (EPCC)</li>
 </ul>
 
 <h2 id="part2">Part 2</h2>
