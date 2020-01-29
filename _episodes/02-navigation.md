@@ -169,8 +169,7 @@ your OS.
 >   being transmitted and made available over the network!
 > * **Work file system** - Some HPC 
 >   systems offer fast file system access as a work file system. Typically, this will have 
->   higher performance than your home directory or network file system and may not be 
->   backed up. It is certainly not backed up, and files here may be automatically deleted periodically.
+>   higher performance and more capacity than your home directory. It likely isn't backed up and files here may even be periodically deleted automatically.
 > * **Local scratch (job only)** - Some systems may offer local scratch space while executing a job.
 >   Such storage is very fast, but will be deleted at the end of your job.
 > * **Ramdisk (job only)** - Some systems may let you store files in a "RAM disk" while running a
