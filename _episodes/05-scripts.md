@@ -419,15 +419,17 @@ That's a huge amount of output. Let's see if we can understand what it is, worki
       with a file. Though files are typically created with read permissions for everyone, typically
       the permissions on your home directory prevent others from being able to access the file in
       the first place.
-+ **2nd column - Owner:** This is the username of the user who owns the file. Their permissions are
++ **2nd column -- Hard links:** The number of hard links, ie the number of files which point to the
+  same location on disk as this file does. 
++ **3rd column - Owner:** This is the username of the user who owns the file. Their permissions are
   indicated in the first permissions column.
-+ **3rd column - Group:** This is the user group of the user who owns the file. Members of this user
++ **4th column - Group:** This is the user group of the user who owns the file. Members of this user
   group have permissions indicated in the second permissions column.
-+ **4th column - Size of file:** This is the size of a file in bytes, or the number of
++ **5th column - Size of file:** This is the size of a file in bytes, or the number of
   files/subdirectories if we are looking at a directory. (We can use the `-h` option here to get a
   human-readable file size in megabytes, gigabytes, etc.)
-+ **5th column - Time last modified:** This is the last time the file was modified.
-+ **6th column - Filename:** This is the filename.
++ **6th column - Time last modified:** This is the last time the file was modified.
++ **7th column - Filename:** This is the filename.
 
 So how do we change permissions? As I mentioned earlier, we need permission to execute our script.
 Changing permissions is done with `chmod`. To add executable permissions for all users we could use
