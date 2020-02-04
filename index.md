@@ -197,6 +197,8 @@ To help us support you as best as possible during the workshop, we request that 
 <h2 id="setup">Course Notes</h2>
 <p>Course notes are available in pdf form below:
   
-* <a href="https://github.com/aniabrown/hpc-carpentry-shell-WHPC/raw/gh-pages/files/HPC_carpentry_notes_day_1.pdf">Day 1</a>
-* <a href="https://github.com/aniabrown/hpc-carpentry-shell-WHPC/raw/gh-pages/files/HPC_carpentry_notes_day_2.pdf">Day 2</a>
-* <a href="https://github.com/aniabrown/hpc-carpentry-shell-WHPC/raw/gh-pages/files/etherpad.pdf">Etherpad</a>
+<ul>
+<li><a href="https://github.com/aniabrown/hpc-carpentry-shell-WHPC/raw/gh-pages/files/HPC_carpentry_notes_day_1.pdf">Day 1</a></li>
+<li><a href="https://github.com/aniabrown/hpc-carpentry-shell-WHPC/raw/gh-pages/files/HPC_carpentry_notes_day_2.pdf">Day 2</a></li>
+<li><a href="https://github.com/aniabrown/hpc-carpentry-shell-WHPC/raw/gh-pages/files/etherpad.pdf">Etherpad</a></li>
+ </ul>
